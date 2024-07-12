@@ -19,18 +19,26 @@ const MusicSection = ({ title, sectionId }) => {
 
   return (
     <div>
-      <h2 className="text-white">{title}</h2>
+      <h2 className="text-white m-0">{title}</h2>
       <Row>
         {songs &&
           songs.map((song) => (
             <Col key={song.id} className="text-center">
-              <img className="img-fluid" src={song.album.cover} alt="album" />
+              <img
+                className="img-fluid"
+                src={song.album.cover_medium}
+                alt="album"
+                onClick={() => handlePlay(song)}
+              />
               <p className="text-white">
                 Track: "{song.title}"<br />
                 Artist: {song.artist.name}
               </p>
-              <Button onClick={() => handlePlay(song)}>Play</Button>
-              <Button variant="success" onClick={() => handleLike(song)}>
+              <Button
+                size="sm"
+                variant="success"
+                onClick={() => handleLike(song)}
+              >
                 {likedSongs.includes(song.id) ? "Unlike" : "Like"}
               </Button>
             </Col>

@@ -14,7 +14,7 @@ const MainSection = () => {
 
   return (
     <div>
-      <div className="d-none d-md-flex justify-content-between mainLinks">
+      <div className="d-none d-md-flex justify-content-between mainLinks m-0">
         <a href="#">Trending</a>
         <a href="#">Podcast</a>
         <a href="#">Moods and genres</a>

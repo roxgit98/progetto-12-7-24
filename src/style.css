@@ -6,6 +6,8 @@ body {
     rgba(33, 44, 61, 1) 42%,
     rgb(15, 21, 29) 100%
   );
+
+  height: 1500px;
 }
 
 .navbar.fixed-left {

@@ -39,8 +39,7 @@ const Player = () => {
                 <div>
                   <p className="text-white">
                     {" "}
-                    Now Playing: {currentSong.title} by{" "}
-                    {currentSong.artist.name}
+                    {currentSong.title} by {currentSong.artist.name}
                   </p>
                 </div>
               )}
